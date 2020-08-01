@@ -1,0 +1,10 @@
+<template>
+    <p><lightning-formatted-text value={lwcPoperty}></lightning-formatted-text></p>
+    <template for:each={availableActions} for:item="action">
+        <lightning-button
+            key={action}
+            label={action}
+            onclick={handleAction}>
+        </lightning-button>
+    </template>    
+</template>
